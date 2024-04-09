@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Scores</title>
+	<script async src="https://arc.io/widget.min.js#YcZMi1rz"></script>
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:500">
+</head>
+
+<body>
+  <header>
+    <img src="/favicon.ico" alt="Logo">
+  </header>
+
+  <div class="button-container">
+    <a href="basketball/" class="button">Basketball</a>
+    <a href="football/" class="button">Football</a>
+    <a href="baseball/" class="button">Baseball</a>
+    <a href="soccer/" class="button">Soccer</a>
+  </div>
+
+  <div class="example-button-container">
+    <a href="https://buffsports.stream" class="button live-button">Watch Live Sports Free (Use Ad Blocker)</a>
+  </div>
+</body>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-weight: 500;
+    background-color: #342e39;
+    color: #e8e6ea;
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #564c5f;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+  }
+
+  header img {
+    width: 80px;
+    height: 80px;
+    animation: load 0.4s ease forwards;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #789194;
+    color: #c7e3db;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: load 0.6s ease forwards;
+  }
+
+  .example-button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .live-button {
+    background-color: #BD93F4;
+    color: #6C7A85;
+    padding: 10px 30px;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: load 0.6s ease forwards;
+  }
+
+  @keyframes load {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+
+</html>
