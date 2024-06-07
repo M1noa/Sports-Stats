@@ -122,7 +122,7 @@ io.on('connection', (socket) => {
 	fetchbasketballScores();
 
 	// Fetch basketball scores every 3 seconds
-	const basketballInterval = setInterval(fetchbasketballScores, 500);
+	const basketballInterval = setInterval(fetchbasketballScores, 150);
 
   // Fetch soccer scores immediately upon connection
   fetchSoccerScores();
