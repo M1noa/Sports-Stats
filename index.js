@@ -26,6 +26,26 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
+// Page
+app.get('/basketball', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/basketball/index.html'));
+});
+
+// Page
+app.get('/baseball', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/baseball/index.html'));
+});
+
+// Page
+app.get('/football', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/football/index.html'));
+});
+
+// Page
+app.get('/soccer', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/soccer/index.html'));
+});
+
 // Fetch live basketball scores
 async function fetchbasketballScores() {
   try {
